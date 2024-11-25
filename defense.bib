@@ -1,3 +1,57 @@
+% Own work
+
+@inbook{Lannurien2023,
+	title        = {{Serverless Cloud Computing: State of the Art and Challenges}},
+	author       = {Lannurien, Vincent and D'Orazio, Laurent and Barais, Olivier and Boukhobza, Jalil},
+	year         = 2023,
+	booktitle    = {Serverless Computing: Principles and Paradigms},
+	publisher    = {Springer International Publishing},
+	address      = {Cham},
+	pages        = {275--316},
+	doi          = {10.1007/978-3-031-26633-1_11},
+	isbn         = {978-3-031-26633-1},
+	editor       = {Krishnamurthi, Rajalakshmi and Kumar, Adarsh and Gill, Sukhpal Singh and Buyya, Rajkumar},
+	abstract     = {The serverless model represents a paradigm shift in the cloud: as opposed to traditional cloud computing service models, serverless customers do not reserve hardware resources. The execution of their code is event-driven (HTTP requests, cron jobs, etc.) and billing is based on actual resource usage. In return, the responsibility of resource allocation and task placement lies on the provider. While serverless in the wild is mainly advertised as a public cloud offering, solutions are actively developed and backed by solid actors in the industry to allow the development of private cloud serverless platforms. The first generation of serverless offers, ``Function as a Service'' (FaaS), has severe shortcomings that can offset the potential benefits for both customers and providers---in terms of spendings and reliability on the customer side, and in terms of resources multiplexing on the provider side. Circumventing these flaws would allow considerable savings in money and energy for both providers and tenants. This chapter aims at establishing a comprehensive tour of these limitations, and presenting state-of-the-art studies to mitigate weaknesses that are currently holding serverless back from becoming the de facto cloud computing model. The main challenges related to the deployment of such a cloud platform are discussed and some perspectives for future directions in research are given.}
+}
+
+@inproceedings{herofake,
+	title        = {{HeROfake: Heterogeneous Resources Orchestration in a Serverless Cloud – An Application to Deepfake Detection}},
+	author       = {Lannurien, Vincent and D'Orazio, Laurent and Barais, Olivier and Bernard, Esther and Weppe, Olivier and Beaulieu, Laurent and Kacete, Amine and Paquelet, Stéphane and Boukhobza, Jalil},
+	year         = 2023,
+	booktitle    = {2023 IEEE/ACM 23rd International Symposium on Cluster, Cloud and Internet Computing (CCGrid)},
+	volume       = {},
+	number       = {},
+	pages        = {154--165},
+	doi          = {10.1109/CCGrid57682.2023.00024},
+}
+
+@inproceedings{herocache,
+	title        = {{{HeROcache}}: {{Storage-Aware}} {{Scheduling}} in {{Heterogeneous}} {{Serverless}} {{Edge}} -- {{The}} {{Case}} of {{IDS}}},
+	author       = {Lannurien, Vincent and Slimani, Camélia and D'Orazio, Laurent and Barais, Olivier and Paquelet, Stéphane and Boukhobza, Jalil},
+	year         = 2024,
+	booktitle    = {2024 IEEE/ACM 24th International Symposium on Cluster, Cloud and Internet Computing (CCGrid)},
+    volume={},
+    number={},
+    pages={587-597},
+    doi={10.1109/CCGrid59990.2024.00071}
+}
+
+@misc{herosim,
+	title        = {{HeROsim: An Allocation and Placement Simulator for Evaluating Serverless Orchestration Policies}},
+	author       = {Lannurien, Vincent},
+	year         = 2024,
+	month        = Feb,
+	note         = {},
+	swhid        = {swh:1:dir:25de7582f8eb4ac1c8e4f6547f13daedd95c89fb;origin=https://hal.archives-ouvertes.fr/hal-04468894;visit=swh:1:snp:f6e59382a8fcc7e6fbfe0828fcd11cf1b7d7395f;anchor=swh:1:rel:8d1f3395227f348fc47e438696cdae643674bf26;path=/},
+	repository   = {https://github.com/b-com/HeROsim},
+	license      = {Apache License 2.0},
+	file         = {https://hal.science/hal-04468894/file/HeROsim-main.zip},
+	hal_id       = {hal-04468894},
+	hal_version  = {v1}
+}
+
+% Various references
+
 @inbook{greenberger1962management,
 	title        = {{Management and the Computer of the Future}},
 	author       = {McCarthy, John},
@@ -35,6 +89,7 @@
 	year         = 2012,
 	month        = jun,
 	booktitle    = {2012 {{IEEE Fifth International Conference}} on {{Cloud Computing}}},
+    series       = {{IEEE Cloud '12}},
 	publisher    = {IEEE},
 	address      = {Honolulu, HI, USA},
 	pages        = {25--32},
@@ -48,7 +103,7 @@
   author = {Armbrust, Michael and Fox, Armando and Griffith, Rean and Joseph, Anthony D. and Katz, Randy and Konwinski, Andy and Lee, Gunho and Patterson, David and Rabkin, Ariel and Stoica, Ion and Zaharia, Matei},
   year = {2010},
   month = apr,
-  journal = {Communications of the ACM},
+  journal = {Commun. ACM},
   volume = {53},
   number = {4},
   pages = {50--58},
@@ -57,16 +112,88 @@
   langid = {english},
 }
 
+@article{masanetRecalibratingGlobalData2020,
+	title        = {{Recalibrating Global Data Center Energy-Use Estimates}},
+	author       = {Masanet, Eric and Shehabi, Arman and Lei, Nuoa and Smith, Sarah and Koomey, Jonathan},
+	year         = 2020,
+	month        = feb,
+	journal      = {Science},
+	volume       = 367,
+	number       = 6481,
+	pages        = {984--986},
+	doi          = {10.1126/science.aba3758},
+	langid       = {english}
+}
+
+@techreport{Electricity2024Analysis2024,
+	title        = {Electricity 2024 - {{Analysis}} and Forecast to 2026},
+	author       = {{International Energy Agency}},
+	year         = 2024,
+    url          = {https://www.iea.org/reports/electricity-2024},
+	langid       = {english}
+}
+
+@techreport{shehabiUnitedStatesData2016a,
+  title = {United {{States Data Center Energy Usage Report}}},
+  author = {Shehabi, Arman and Smith, Sarah and Sartor, Dale and Brown, Richard and Herrlin, Magnus and Koomey, Jonathan and Masanet, Eric and Horner, Nathaniel and Azevedo, In{\^e}s and Lintner, William},
+  year = {2016},
+  month = jun,
+  number = {LBNL--1005775, 1372902},
+  pages = {LBNL--1005775, 1372902},
+  doi = {10.2172/1372902},
+  langid = {english},
+}
+
+@inproceedings{vasanWorthTheirWatts2010,
+	title        = {Worth Their Watts? - An Empirical Study of Datacenter Servers},
+	shorttitle   = {Worth Their Watts?},
+	author       = {Vasan, Arunchandar and Sivasubramaniam, Anand and Shimpi, Vikrant and Sivabalan, T. and Subbiah, Rajesh},
+	year         = 2010,
+	month        = jan,
+	booktitle    = {{{HPCA}} - 16 2010 {{The Sixteenth International Symposium}} on {{High-Performance Computer Architecture}}},
+    series       = {{HPCA '16}},
+	publisher    = {IEEE},
+	address      = {Bangalore},
+	pages        = {1--10},
+	doi          = {10.1109/HPCA.2010.5463056},
+	isbn         = {978-1-4244-5658-1},
+	abstract     = {The management of power consumption in datacenters has become an important problem. This needs a systematic evaluation of the as-is scenario to identify potential areas for improvement and quantify the impact of any strategy. We present a measurement study of a production datacenter from a joint perspective of power and performance at the individual server level. Our observations help correlate power consumption of production servers with their activity, and identify easily implementable improvements. We find that production servers are underutilized from an activity perspective; are overrated from a power perspective; execute temporally similar workloads over a granularity of weeks; do not idle efficiently; and have power consumptions that are well tracked by their CPU utilizations. Our measurements suggest the following steps for improvement: staggering periodic activities on servers; enabling deeper sleep states; and provisioning based on measurement.},
+	langid       = {english}
+}
+
+@article{pedramEnergyEfficientDatacenters2012,
+  title = {Energy-{{Efficient Datacenters}}},
+  author = {Pedram, Massoud},
+  year = {2012},
+  month = oct,
+  journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+  volume = {31},
+  number = {10},
+  pages = {1465--1484},
+  doi = {10.1109/TCAD.2012.2212898},
+  abstract = {Pervasive use of cloud computing and the resulting rise in the number of datacenters and hosting centers (that provide platform or software services to clients who do not have the means to set up and operate their own computing facilities) have brought forth many concerns, including the electrical energy cost, peak power dissipation, cooling, and carbon emission. With power consumption becoming an increasingly important issue for the operation and maintenance of the hosting centers, corporate and business owners are becoming increasingly concerned. Furthermore, provisioning resources in a cost-optimal manner so as to meet different performance criteria, such as throughput or response time, has become a critical challenge. The goal of this paper is to provide an introduction to resource provisioning and power or thermal management problems in datacenters, and to review strategies that maximize the datacenter energy efficiency subject to peak or total power consumption and thermal constraints, while meeting stipulated service level agreements in terms of task throughput and/or response time.},
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  langid = {english},
+}
+
+@misc{WorldwideSpendingPublic,
+	title        = {Worldwide {{Spending}} on {{Public Cloud Services}} Is {{Forecast}} to {{Reach}} \$1.35 {{Trillion}} in 2027, {{According}} to {{New IDC Spending Guide}}},
+	author       = {{International Data Corporation}},
+	journal      = {IDC: The premier global market intelligence company},
+    url          = {https://www.idc.com/getdoc.jsp?containerId=prUS51179523},
+	abstract     = {IDC examines consumer markets by devices, applications, networks, and services to provide complete solutions for succeeding in these expanding markets.}
+}
+
 @misc{Numerique40Budget2021,
   title = {{Num{\'e}rique : 40 \% du budget GES soutenable d'un europ{\'e}en}},
+  author = {Bordage, Frédéric},
   shorttitle = {{Num{\'e}rique}},
   year = {2021},
   month = dec,
   journal = {Green IT},
-  urldate = {2024-11-05},
   abstract = {Exclusif. Premi{\`e}re {\'e}tude sur la pollution num{\'e}rique en Europe et ses atteintes {\`a} l'environnement. Analyse du Cycle de Vie. {\'e}tude. 2021.},
   chapter = {Etude},
-  howpublished = {https://www.greenit.fr/2021/12/08/numerique-40-du-budget-ges-soutenable-dun-europeen/},
+  url = {https://www.greenit.fr/2021/12/08/numerique-40-du-budget-ges-soutenable-dun-europeen/},
   langid = {french},
 }
 
@@ -94,6 +221,7 @@
 	year         = 2021,
 	month        = dec,
 	booktitle    = {Proceedings of the 22nd {{International Middleware Conference}}},
+    series       = {{Middleware '21}},
 	publisher    = {{ACM}},
 	address      = {{Qu\'ebec city Canada}},
 	pages        = {104--118},
@@ -118,12 +246,13 @@
 }
 
 @inproceedings{buyyaSLAorientedResourceProvisioning2011,
-	title        = {{SLA}-oriented Resource Provisioning for Cloud Computing: {C}hallenges, Architecture, and Solutions},
+	title        = {{SLA}-oriented Resource Provisioning for Cloud Computing: Challenges, architecture, and solutions},
 	shorttitle   = {{SLA}-oriented Resource Provisioning for Cloud Computing},
 	author       = {Buyya, Rajkumar and Garg, Saurabh Kumar and Calheiros, Rodrigo N.},
 	year         = 2011,
 	month        = dec,
 	booktitle    = {2011 {I}nternational {C}onference on {C}loud and {S}ervice {C}omputing},
+    series       = {{IEEE Cloud '11}},
 	publisher    = {{IEEE}},
 	address      = {{Hong Kong, China}},
 	pages        = {1--10},
@@ -132,3 +261,490 @@
 	langid       = {english}
 }
 
+@inproceedings{mullerLambadaInteractiveData2020,
+	title        = {{L}ambada: {I}nteractive {D}ata {A}nalytics on {C}old {D}ata {U}sing {S}erverless {C}loud {I}nfrastructure},
+	shorttitle   = {{L}ambada},
+	author       = {M{\"u}ller, Ingo and Marroqu{\'i}n, Renato and Alonso, Gustavo},
+	year         = 2020,
+	month        = jun,
+	booktitle    = {Proceedings of the 2020 {{ACM SIGMOD International Conference}} on {{Management}} of {{Data}}},
+    series       = {{SIGMOD '20}},
+	publisher    = {{ACM}},
+	address      = {{Portland OR USA}},
+	pages        = {115--130},
+	doi          = {10.1145/3318464.3389758},
+	isbn         = {978-1-4503-6735-6},
+	abstract     = {Serverless computing has recently attracted a lot of attention from research and industry due to its promise of ultimate elasticity and operational simplicity. However, there is no consensus yet on whether or not the approach is suitable for data processing. In this paper, we present Lambada, a serverless distributed data processing framework designed to explore how to perform data analytics on serverless computing. In our analysis, supported with extensive experiments, we show in which scenarios serverless makes sense from an economic and performance perspective. We address several important technical questions that need to be solved to support data analytics and present examples from several domains where serverless offers a cost and performance advantage over existing solutions.},
+	langid       = {english}
+}
+
+@inproceedings{wawrzoniakBoxerDataAnalytics2021a,
+	title        = {Boxer: {{Data Analytics}} on {{Network-enabled Serverless Platforms}}},
+	shorttitle   = {Boxer},
+	author       = {Wawrzoniak, Michael and M{\"u}ller, Ingo and Fraga Barcelos Paulus Bruno, Rodrigo and Alonso, Gustavo},
+	year         = 2021,
+	month        = jan,
+	booktitle    = {{CIDR 2021}},
+    series       = {{CIDR '21}},
+	publisher    = {www.cidrdb.org},
+	doi          = {10.3929/ETHZ-B-000456492},
+	copyright    = {Creative Commons Attribution 3.0 Unported, info:eu-repo/semantics/openAccess},
+	abstract     = {Serverless is an attractive platform for a variety of applications in the cloud due to its promise of elasticity, low cost, and fast deployment. Instead of using traditional virtual machine services and a fixed infrastructure, which incurs considerable costs to operate and run, Function-as-a-Service allows triggering short computations on demand with the cost proportional to the time the functions are running. As appealing as the idea is, recent work has shown that for data processing applications (regardless of whether it is OLTP, OLAP, or ML) existing serverless platforms are inadequate and additional services are needed in practice, often to address the lack of communication capabilities between functions. In this paper, we demonstrate how to enable function-to-function communication using conventional TCP/IP and show how the ability to communicate can be used to implement data processing on serverless platforms in a more efficient manner than it was possible until now. Our benchmarks show a speedup as high as 11 \texttimes{} in TPC-H queries over systems that use cloud storage to communicate across functions, sustained function-to-function throughput of 621 Mbit/s, and a round-trip latency of less than 1 ms.},
+	langid       = {english}
+}
+
+%% HeROfake -- Contribution
+
+@online{knative-autoscaling,
+  author = {{The Knative Authors}},
+  title = {Knative Autoscaling},
+  url = {https://github.com/knative/serving/tree/main/docs/scaling},
+  year = 2022,
+}
+
+%% HeROfake -- SotA
+
+@inproceedings{gujaratiSwayamDistributedAutoscaling2017,
+	title        = {{S}wayam: {D}istributed Autoscaling to Meet {SLA}s of Machine Learning Inference Services with Resource Efficiency},
+	shorttitle   = {{S}wayam},
+	author       = {Gujarati, Arpan and Elnikety, Sameh and He, Yuxiong and McKinley, Kathryn S. and Brandenburg, Bj{\"o}rn B.},
+	year         = 2017,
+	month        = dec,
+	booktitle    = {Proceedings of the 18th {{ACM}}/{{IFIP}}/{{USENIX Middleware Conference}}},
+	publisher    = {{ACM}},
+	address      = {{Las Vegas Nevada}},
+	pages        = {109--120},
+	doi          = {10.1145/3135974.3135993},
+	isbn         = {978-1-4503-4720-4},
+	abstract     = {Developers use Machine Learning (ML) platforms to train ML models and then deploy these ML models as web services for inference (prediction). A key challenge for platform providers is to guarantee response-time Service Level Agreements (SLAs) for inference workloads while maximizing resource e ciency. Swayam is a fully distributed autoscaling framework that exploits characteristics of production ML inference workloads to deliver on the dual challenge of resource e ciency and SLA compliance. Our key contributions are (1) model-based autoscaling that takes into account SLAs and ML inference workload characteristics, (2) a distributed protocol that uses partial load information and prediction at frontends to provision new service instances, and (3) a backend self-decommissioning protocol for service instances. We evaluate Swayam on 15 popular services that were hosted on a production ML-as-a-service platform, for the following service-speci c SLAs: for each service, at least 99\% of requests must complete within the response-time threshold. Compared to a clairvoyant autoscaler that always satis es the SLAs (i.e., even if there is a burst in the request rates), Swayam decreases resource utilization by up to 27\%, while meeting the service-speci c SLAs over 96\% of the time during a three hour window. Microsoft Azure's Swayam-based framework was deployed in 2016 and has hosted over 100,000 services.},
+	langid       = {english}
+}
+
+@inproceedings{lingPigeonDynamicEfficient2019,
+	title        = {{P}igeon: {A} Dynamic and Efficient Serverless and {FaaS} Framework for Private Cloud},
+	shorttitle   = {{P}igeon},
+	author       = {Ling, Wei and Ma, Lin and Tian, Chen and Hu, Ziang},
+	year         = 2019,
+	month        = dec,
+	booktitle    = {2019 {{International Conference}} on {{Computational Science}} and {{Computational Intelligence}} ({{CSCI}})},
+	publisher    = {{IEEE}},
+	address      = {{Las Vegas, NV, USA}},
+	pages        = {1416--1421},
+	doi          = {10.1109/CSCI49370.2019.00265},
+	isbn         = {978-1-72815-584-5},
+	abstract     = {Recently, voice-triggered small cloud functions such as Alexa skills, and cloud mini programs for IoT and smartphone, grow exponentially. These new developments also attract organizations to host their own cloud functions or mini programs in private cloud environment and move from traditional Microservice architecture to Serverless Function-as-a-Service (FaaS) architecture. However, current Serverless FaaS frameworks cannot meet cold start latency, resource efficiency required by shortlived cloud functions and mini programs.},
+	langid       = {english}
+}
+
+@inproceedings{zhangMArkExploitingCloud,
+	title        = {{MArk}: {E}xploiting Cloud Services for Cost-Effective, {SLO}-Aware Machine Learning Inference Serving},
+	author       = {Chengliang Zhang and Minchen Yu and Wei Wang and Feng Yan},
+	year         = 2019,
+	month        = jul,
+	booktitle    = {2019 USENIX Annual Technical Conference (USENIX ATC 19)},
+    series       = {{USENIX ATC'19}},
+	publisher    = {USENIX Association},
+	address      = {Renton, WA},
+	pages        = {1049--1062},
+	isbn         = {978-1-939133-03-8},
+    url          = {https://www.usenix.org/conference/atc19/presentation/zhang-chengliang},
+	abstract     = {The advances of Machine Learning (ML) have sparked a growing demand of ML-as-a-Service: developers train ML models and publish them in the cloud as online services to provide low-latency inference at scale. The key challenge of ML model serving is to meet the response-time Service-Level Objectives (SLOs) of inference workloads while minimizing the serving cost. In this paper, we tackle the dual challenge of SLO compliance and cost effectiveness with MArk (Model Ark), a general-purpose inference serving system built in Amazon Web Services (AWS). MArk employs three design choices tailor-made for inference workload. First, MArk dynamically batches requests and opportunistically serves them using expensive hardware accelerators (e.g., GPU) for improved performance-cost ratio. Second, instead of relying on feedback control scaling or over-provisioning to serve dynamic workload, which can be too slow or too expensive for inference serving, MArk employs predictive autoscaling to hide the provisioning latency at low cost. Third, given the stateless nature of inference serving, MArk exploits the flexible, yet costly serverless instances to cover the occasional load spikes that are hard to predict. We evaluated the performance of MArk using several state-of-the-art ML models trained in popular frameworks including TensorFlow, MXNet, and Keras. Compared with the premier industrial ML serving platform SageMaker, MArk reduces the serving cost up to 7.8\texttimes{} while achieving even better latency performance.},
+	langid       = {english}
+}
+
+@inproceedings{sureshENSUREEfficientScheduling2020,
+	title        = {{ENSURE}: {E}fficient Scheduling and Autonomous Resource Management in Serverless Environments},
+	shorttitle   = {{ENSURE}},
+	author       = {Suresh, Amoghavarsha and Somashekar, Gagan and Varadarajan, Anandh and Kakarla, Veerendra Ramesh and Upadhyay, Hima and Gandhi, Anshul},
+	year         = 2020,
+	month        = aug,
+	booktitle    = {2020 {{IEEE International Conference}} on {{Autonomic Computing}} and {{Self-Organizing Systems}} ({{ACSOS}})},
+    series       = {{ACSOS '20}},
+	publisher    = {{IEEE}},
+	address      = {{Washington, DC, USA}},
+	pages        = {1--10},
+	doi          = {10.1109/ACSOS49614.2020.00020},
+	isbn         = {978-1-72817-277-4},
+	abstract     = {An imminent challenge in the serverless computing landscape is the escalating cost of infrastructure needed to handle the growing traffic at scale. This work presents ENSURE, a function-level scheduler and autonomous resource manager designed to minimize provider resource costs while meeting customer performance requirements. ENSURE works by classifying incoming function requests at runtime and carefully regulating the resource usage of colocated functions on each invoker. Beyond a single invoker, ENSURE elastically scales capacity, using concepts from operations research, in response to varying workload traffic to prevent cold starts. Finally, ENSURE schedules requests by concentrating load on an adequate number of invokers to encourage reuse of active hosts (thus further avoiding cold starts) and allow unneeded capacity to provably and gracefully time out. We implement ENSURE on Apache OpenWhisk and show that, across several serverless applications and compared to existing baselines, ENSURE significantly improves resource efficiency, by as much as 52\%, while providing acceptable application latency.},
+	langid       = {english}
+}
+
+@inproceedings{mampageDeadlineawareDynamicResource2021,
+	title        = {Deadline-Aware Dynamic Resource Management in Serverless Computing Environments},
+	author       = {Mampage, Anupama and Karunasekera, Shanika and Buyya, Rajkumar},
+	year         = 2021,
+	month        = may,
+	booktitle    = {2021 {{IEEE}}/{{ACM}} 21st {{International Symposium}} on {{Cluster}}, {{Cloud}} and {{Internet Computing}} ({{CCGrid}})},
+	publisher    = {{IEEE}},
+	address      = {{Melbourne, Australia}},
+	pages        = {483--492},
+	doi          = {10.1109/CCGrid51090.2021.00058},
+	isbn         = {978-1-72819-586-5},
+	abstract     = {Serverless computing enables rapid application development and deployment by composing loosely coupled microservices at a scale. This emerging paradigm greatly unburdens the users of cloud environments, from the need to provision and manage the underlying cloud resources. With this shift in responsibility, the cloud provider faces the challenge of providing acceptable performance to the user without compromising on reliability, while having minimal knowledge of the application requirements. Sub-optimal resource allocations, specifically the CPU resources, could result in the violation of performance requirements of applications. Further, the fine-grained serverless billing model only charges for resource usage in terms of function execution time. At the same time, the provider has to maintain the underlying infrastructure in always-on mode to facilitate asynchronous function calls. Thus, achieving optimum utilization of cloud resources without compromising on application requirements is of high importance to the provider. Most of the current works only focus on minimizing function execution times caused by delays in infrastructure set up and reducing resource costs for the end-user. However, in this paper, we focus on both the provider and user's perspective and propose a function placement policy and a dynamic resource management policy for applications deployed in serverless computing environments. The policies minimize the resource consumption cost for the service provider while meeting the user's application requirement, i.e., deadline. The proposed solutions are sensitive to deadline and efficiently increase the resource utilization for the provider, while dynamically managing resources to improve function response times. We implement and evaluate our approach through simulation using ContainerCloudSim toolkit. The proposed function placement policy when compared with baseline scheduling techniques can reduce resource consumption by up to three times. The dynamic resource allocation policy when evaluated with a fixed resource allocation policy and a proportional CPU-shares policy shows improvements of up to 25\% in meeting the required function deadlines.},
+	langid       = {english}
+}
+
+@inproceedings{singhviAtollScalableLowLatency2021,
+	title        = {{A}toll: {A} Scalable Low-Latency Serverless Platform},
+	shorttitle   = {{A}toll},
+	author       = {Singhvi, Arjun and Balasubramanian, Arjun and Houck, Kevin and Shaikh, Mohammed Danish and Venkataraman, Shivaram and Akella, Aditya},
+	year         = 2021,
+	month        = nov,
+	booktitle    = {Proceedings of the {{ACM Symposium}} on {{Cloud Computing}}},
+	publisher    = {{ACM}},
+	address      = {{Seattle WA USA}},
+	pages        = {138--152},
+	doi          = {10.1145/3472883.3486981},
+	isbn         = {978-1-4503-8638-8},
+	abstract     = {With user-facing apps adopting serverless computing, good latency performance of serverless platforms has become a strong fundamental requirement. However, it is di\dbend cult to achieve this on platforms today due to the design of their underlying control and data planes that are particularly illsuited to short-lived functions with unpredictable arrival patterns. We present Atoll, a serverless platform, that overcomes the challenges via a ground-up redesign of the control and data planes. In Atoll, each app is associated with a latency deadline. Atoll achieves its per-app request latency goals by: (a) partitioning the cluster into (semi-global scheduler, worker pool) pairs, (b) performing deadline-aware scheduling and proactive sandbox allocation, and (c) using a load balancing layer to do sandbox-aware routing, and automatically scale the semi-global schedulers per app. Our results show that Atoll reduces missed deadlines by {$\dashleftarrow$}66{$\RightArrowBar$} and tail latencies by {$\dashleftarrow$}3{$\RightArrowBar$} compared to state-of-the-art alternatives.},
+	langid       = {english}
+}
+
+@inproceedings{yangINFlessNativeServerless2022,
+	title        = {{INFless}: {A} Native Serverless System for Low-Latency, High-Throughput Inference},
+	shorttitle   = {{INFless}},
+	author       = {Yang, Yanan and Zhao, Laiping and Li, Yiming and Zhang, Huanyu and Li, Jie and Zhao, Mingyang and Chen, Xingzhen and Li, Keqiu},
+	year         = 2022,
+	month        = feb,
+	booktitle    = {Proceedings of the 27th {{ACM International Conference}} on {{Architectural Support}} for {{Programming Languages}} and {{Operating Systems}}},
+	publisher    = {{ACM}},
+	address      = {{Lausanne Switzerland}},
+	pages        = {768--781},
+	doi          = {10.1145/3503222.3507709},
+	isbn         = {978-1-4503-9205-1},
+	abstract     = {Modern websites increasingly rely on machine learning (ML) to improve their business efficiency. Developing and maintaining ML services incurs high costs for developers. Although serverless systems are a promising solution to reduce costs, we find that the current general purpose serverless systems cannot meet the low latency, high throughput demands of ML services.},
+	langid       = {english}
+}
+
+@inproceedings{choSLADrivenMLInference,
+	title        = {{SLA}-Driven ML Inference Framework for Clouds With Heterogeneous Accelerators},
+	author       = {Cho, Junguk and Tootaghaj, Diman Zad and Cao, Lianjie and Sharma, Puneet},
+	year         = 2022,
+	booktitle    = {Proceedings of Machine Learning and Systems},
+	volume       = 4,
+	pages        = {20--32},
+	abstract     = {The current design of Serverless computing frameworks assumes that all the requests and underlying compute hardware are homogeneous. This homogeneity assumption causes two challenges in running ML workloads like Deep Neural Network (DNN) inference services on these frameworks. Such workloads can have various request types and might require heterogeneous accelerators. First, existing serverless frameworks are thresholdbased and use simple query per second or CPU utilization as autoscaling rules, thus ignoring heterogeneous requests and accelerators, resulting in sub-optimal performance. Second, ignoring infrastructure heterogeneity for workload scheduling and inference request distribution can lead to further performance inefficiencies. To address these challenges, we propose SLA-aware ML Inference Framework, which is a novel application and hardwareaware serverless computing framework to manage ML (e.g., DNN) inference applications in a heterogeneous infrastructure. Our framework designs an intelligent autoscaling strategy by leveraging rich, precise workloadspecific metrics and heterogeneous GPU compute capability. We schedule functions on the suitable GPU accelerators and proportionally distribute inference requests to the deployed functions based on the autoscaling decision. In addition, our framework enables efficient shares of GPU accelerators with multiple functions to increase resource efficiency with minimal overhead. Unlike prior works, we use application-specific SLA metrics to make scheduling/autoscaling decisions. We implement a prototype of our framework based on the Knative serverless framework and evaluate its performance with various DNN models.},
+	langid       = {english},
+    url          = {https://proceedings.mlsys.org/paper_files/paper/2022/hash/bcf9bef61a534d0ce4a3c55f09dfcc29-Abstract.html},
+}
+
+%% HeROcache -- Contribution
+
+@misc{leeSPESOptimizingPerformanceResource2024a,
+	title        = {{{SPES}}: {{Towards Optimizing Performance-Resource Trade-Off}} for {{Serverless Functions}}},
+	shorttitle   = {{SPES}},
+	author       = {Lee, Cheryl and Zhu, Zhouruixin and Yang, Tianyi and Huo, Yintong and Su, Yuxin and He, Pinjia and Lyu, Michael R.},
+	year         = 2024,
+	month        = mar,
+	publisher    = {arXiv},
+	number       = {arXiv:2403.17574},
+	doi          = {10.48550/arXiv.2403.17574},
+	eprint       = {2403.17574},
+	primaryclass = {cs},
+	abstract     = {As an emerging cloud computing deployment paradigm, serverless computing is gaining traction due to its efficiency and ability to harness on-demand cloud resources. However, a significant hurdle remains in the form of the cold start problem, causing latency when launching new function instances from scratch. Existing solutions tend to use oversimplistic strategies for function pre-loading/unloading without full invocation pattern exploitation, rendering unsatisfactory optimization of the trade-off between cold start latency and resource waste. To bridge this gap, we propose SPES, the first differentiated scheduler for runtime cold start mitigation by optimizing serverless function provision. Our insight is that the common architecture of serverless systems prompts the concentration of certain invocation patterns, leading to predictable invocation behaviors. This allows us to categorize functions and pre-load/unload proper function instances with finer-grained strategies based on accurate invocation prediction. Experiments demonstrate the success of SPES in optimizing serverless function provision on both sides: reducing the 75th-percentile cold start rates by 49.77\% and the wasted memory time by 56.43\%, compared to the state-of-the-art. By mitigating the cold start issue, SPES is a promising advancement in facilitating cloud services deployed on serverless architectures.},
+	archiveprefix = {arxiv},
+	langid       = {english},
+	keywords     = {Computer Science - Distributed Parallel and Cluster Computing,Computer Science - Software Engineering}
+}
+
+%% HeROcache -- SotA
+
+@inproceedings{bhasiCypressInputSizesensitive2022,
+	title        = {{Cypress: Input Size-Sensitive Container Provisioning and Request Scheduling for Serverless Platforms}},
+	shorttitle   = {Cypress},
+	author       = {Bhasi, Vivek M. and Gunasekaran, Jashwant Raj and Sharma, Aakash and Kandemir, Mahmut Taylan and Das, Chita},
+	year         = 2022,
+	month        = nov,
+	booktitle    = {Proceedings of the 13th Symposium on Cloud Computing},
+    pages        = {257–272},
+    numpages     = {16},
+    keywords     = {input size, resource-management, scheduling, serverless},
+    location     = {San Francisco, California},
+    series       = {SoCC '22},
+	publisher    = {Association for Computing Machinery},
+    address      = {New York, NY, USA},
+	doi          = {10.1145/3542929.3563464},
+	isbn         = {978-1-4503-9414-7},
+	abstract     = {The growing popularity of the serverless platform has seen an increase in the number and variety of applications (apps) being deployed on it. The majority of these apps process user-provided input to produce the desired results. Existing work in the area of input-sensitive profiling has empirically shown that many such apps have input size\textendash dependent execution times which can be determined through modelling techniques. Nevertheless, existing serverless resource management frameworks are agnostic to the input size\textendash sensitive nature of these apps. We demonstrate in this paper that this can potentially lead to container over-provisioning and/or end-to-end Service Level Objective (SLO) violations. To address this, we propose Cypress, an input size\textendash sensitive resource management framework, that minimizes the containers provisioned for apps, while ensuring a high degree of SLO compliance. We perform an extensive evaluation of Cypress on top of a Kubernetes-managed cluster using 5 apps from the AWS Serverless Application Repository and/or OpenFaaS Function Store with real-world traces and varied input size distributions. Our experimental results show that Cypress spawns up to 66\% fewer containers, thereby, improving container utilization and saving cluster-wide energy by up to 2.95\texttimes{} and 23\%, respectively, versus state-of-the-art frameworks, while remaining highly SLO-compliant (up to 99.99\%). CCS Concepts \textbullet{} Computer systems organization \textrightarrow{} Cloud Computing; Resource-Management; Scheduling.},
+	langid       = {english}
+}
+
+@inproceedings{smithFaDOFaaSFunctions2022,
+	title        = {{FaDO: FaaS Functions and Data Orchestrator for Multiple Serverless Edge-Cloud Clusters}},
+	shorttitle   = {{FaDO}},
+	author       = {Smith, Christopher Peter and Jindal, Anshul and Chadha, Mohak and Gerndt, Michael and Benedict, Shajulin},
+	year         = 2022,
+	month        = may,
+	booktitle    = {2022 IEEE 6th International Conference on Fog and Edge Computing (ICFEC)},
+	publisher    = {{IEEE}},
+	address      = {{Messina, Italy}},
+	pages        = {17--25},
+	doi          = {10.1109/ICFEC54809.2022.00010},
+	isbn         = {978-1-66549-524-0},
+	abstract     = {Function-as-a-Service (FaaS) is an attractive cloud computing model that simplifies application development and deployment. However, current serverless compute platforms do not consider data placement when scheduling functions. With the growing demand for edge-cloud continuum, multi-cloud, and multi-serverless applications, this flaw means serverless technologies are still ill-suited to latency-sensitive operations like media streaming. This work proposes a solution by presenting a tool called FaDO: FaaS Functions and Data Orchestrator, designed to allow data-aware functions scheduling across multiserverless compute clusters present at different locations, such as at the edge and in the cloud. FaDO works through headerbased HTTP reverse proxying and uses three load-balancing algorithms: 1) The Least Connections, 2) Round Robin, and 3) Random for load balancing the invocations of the function across the suitable serverless compute clusters based on the set storage policies. FaDO further provides users with an abstraction of the serverless compute cluster's storage, allowing users to interact with data across different storage services through a unified interface. In addition, users can configure automatic and policy-aware granular data replications, causing FaDO to spread data across the clusters while respecting location constraints. Load testing results show that it is capable of load balancing high-throughput workloads, placing functions near their data without contributing any significant performance overhead.},
+	langid       = {english}
+}
+
+@inproceedings{zijunFassflowEfficient2022,
+	title        = {{FaaSFlow: Enable Efficient Workflow Execution for Function-as-a-Service}},
+	author       = {Li, Zijun and Liu, Yushi and Guo, Linsong and Chen, Quan and Cheng, Jiagan and Zheng, Wenli and Guo, Minyi},
+	year         = 2022,
+	booktitle    = {Proceedings of the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+    pages        = {782–796},
+    numpages     = {15},
+    keywords     = {FaaS, graph partition, master-worker, serverless workflows},
+    location     = {Lausanne, Switzerland},
+    series       = {ASPLOS '22},
+    publisher    = {Association for Computing Machinery},
+    address      = {New York, NY, USA},
+	doi          = {10.1145/3503222.3507717},
+    isbn         = {9781450392051},
+	abstract     = {Serverless computing (Function-as-a-Service) provides fine-grain resource sharing by running functions (or Lambdas) in containers. Data-dependent functions are required to be invoked following a pre-defined logic, which is known as serverless workflows. However, our investigation shows that the traditional master-worker based workflow execution architecture performs poorly in serverless context. One significant overhead results from the master-side workflow schedule pattern, with which the functions are triggered in the master node and assigned to worker nodes for execution. Besides, the data movement between workers also reduces the throughput. To this end, we present a worker-side workflow schedule pattern for serverless workflow execution. Following the design, we implement FaaSFlow to enable efficient workflow execution in the serverless context. Besides, we propose an adaptive storage library FaaStore that enables fast data transfer between functions on the same node without through the database. Experiment results show that FaaSFlow effectively mitigates the workflow scheduling overhead by 74.6\% on average and data transmission overhead by 95\% at most. When the network bandwidth fluctuates, FaaSFlow-FaaStore reduces the throughput degradation by 23.0\%, and is able to multiply the utilization of network bandwidth by 1.5X-4X.},
+	numpages     = 15,
+	keywords     = {graph partition, master-worker, FaaS, serverless workflows}
+}
+
+@inproceedings{zhangFIRSTExploitingMultiDimensional2023,
+	title        = {{FIRST: Exploiting the Multi-Dimensional Attributes of Functions for Power-Aware Serverless Computing}},
+	shorttitle   = {{FIRST}},
+	author       = {Zhang, Lu and Li, Chao and Wang, Xinkai and Feng, Weiqi and Yu, Zheng and Chen, Quan and Leng, Jingwen and Guo, Minyi and Yang, Pu and Yue, Shang},
+	year         = 2023,
+	month        = may,
+	booktitle    = {2023 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+	publisher    = {{IEEE}},
+	address      = {{St. Petersburg, FL, USA}},
+	pages        = {864--874},
+	doi          = {10.1109/IPDPS54959.2023.00091},
+	isbn         = {9798350337662},
+	abstract     = {Emerging cloud-native development models raise new challenges for managing server performance and power at microsecond scale. Compared with traditional cloud workloads, serverless functions exhibit unprecedented heterogeneity, variability, and dynamicity. Designing cloud-native power management schemes for serverless functions requires significant engineering effort. Current solutions remain sub-optimal since their orchestration process is often one-sided, lacking a systematic view. A key obstacle to truly efficient function deployment is the fundamental wide abstraction gap between the upper-layer request scheduling and the low-level hardware execution.},
+	langid       = {english}
+}
+
+@article{burckhardtNetheriteEfficientExecution,
+	title        = {{Netherite: Efficient Execution of Serverless Workflows}},
+	author       = {Burckhardt, Sebastian and Chandramouli, Badrish and Gillum, Chris and Justo, David and Kallas, Konstantinos and McMahon, Connor and Meiklejohn, Christopher S. and Zhu, Xiangfeng},
+	year         = 2022,
+	month        = apr,
+	journal      = {Proc. VLDB Endow.},
+	publisher    = {VLDB Endowment},
+	volume       = 15,
+	number       = 8,
+	pages        = {1591–1604},
+	doi          = {10.14778/3529337.3529344},
+	issue_date   = {April 2022},
+	abstract     = {Serverless is a popular choice for cloud service architects because it can provide scalability and load-based billing with minimal developer effort. Functions-as-a-service (FaaS) are originally stateless, but emerging frameworks add stateful abstractions. For instance, the widely used Durable Functions (DF) allow developers to write advanced serverless applications, including reliable workflows and actors, in a programming language of choice. DF implicitly and continuosly persists the state and progress of applications, which greatly simplifies development, but can create an IOps bottleneck.To improve efficiency, we introduce Netherite, a novel architecture for executing serverless workflows on an elastic cluster. Netherite groups the numerous application objects into a smaller number of partitions, and pipelines the state persistence of each partition. This improves latency and throughput, as it enables workflow steps to group commit, even if causally dependent. Moreover, Netherite leverages FASTER's hybrid log approach to support larger-than-memory application state, and to enable efficient partition movement between compute hosts.Our evaluation shows that (a) Netherite achieves lower latency and higher throughput than the original DF engine, by more than an order of magnitude in some cases, and (b) that Netherite has lower latency than some commonly used alternatives, like AWS Step Functions or cloud storage triggers.},
+	numpages     = 14
+}
+
+@inproceedings{abdiPaletteLoadBalancing2023,
+	title        = {{Palette Load Balancing: Locality Hints for Serverless Functions}},
+	shorttitle   = {Palette {{Load Balancing}}},
+	author       = {Abdi, Mania and Ginzburg, Samuel and Lin, Xiayue Charles and Faleiro, Jose and Chaudhry, Gohar Irfan and Goiri, Inigo and Bianchini, Ricardo and Berger, Daniel S and Fonseca, Rodrigo},
+	year         = 2023,
+	month        = may,
+	booktitle    = {Proceedings of the Eighteenth European Conference on Computer Systems},
+    pages        = {365–380},
+    numpages     = {16},
+    keywords     = {data-parallel processing, caching, serverless computing, cloud computing},
+    location     = {Rome, Italy},
+    series       = {EuroSys '23},
+	publisher    = {Association for Computing Machinery},
+    address      = {New York, NY, USA},
+	doi          = {10.1145/3552326.3567496},
+	isbn         = {978-1-4503-9487-1},
+	abstract     = {Function-as-a-Service (FaaS) serverless computing enables a simple programming model with almost unbounded elasticity. Unfortunately, current FaaS platforms achieve this flexibility at the cost of lower performance for data-intensive applications compared to a serverful deployment. The ability to have computation close to data is a key missing feature. We introduce Palette load balancing, which offers FaaS applications a simple mechanism to express locality to the platform, through hints we term ``colors''. Palette maintains the serverless nature of the service \textendash{} users are still not allocating resources \textendash{} while allowing the platform to place successive invocations related to each other on the same executing node. We compare a prototype of the Palette load balancer to a state-of-the-art locality-oblivious load balancer on representative examples of three applications. For a serverless web application with a local cache, Palette improves the hit ratio by 6x. For a serverless version of Dask, Palette improves run times by 46\% and 40\% on Task Bench and TPC-H, respectively. On a serverless version of NumS, Palette improves run times by 37\%. These improvements largely bridge the gap to serverful implementation of the same systems.},
+	langid       = {english}
+}
+
+%% HeROsim -- Contribution
+
+@inproceedings{wangPeekingCurtainsServerlessb,
+	title        = {Peeking Behind the Curtains of Serverless Platforms},
+	author       = {Liang Wang and Mengyuan Li and Yinqian Zhang and Thomas Ristenpart and Michael Swift},
+	year         = 2018,
+	month        = jul,
+	booktitle    = {2018 USENIX Annual Technical Conference (USENIX ATC 18)},
+    series       = {{USENIX ATC'18}},
+	publisher    = {USENIX Association},
+	address      = {Boston, MA},
+	pages        = {133--146},
+	isbn         = {ISBN 978-1-939133-01-4},
+    url          = {https://www.usenix.org/conference/atc18/presentation/wang-liang},
+    urldate      = {2024-09-18},
+	abstract     = {Serverless computing is an emerging paradigm in which an application's resource provisioning and scaling are managed by third-party services. Examples include AWS Lambda, Azure Functions, and Google Cloud Functions. Behind these services' easy-to-use APIs are opaque, complex infrastructure and management ecosystems. Taking on the viewpoint of a serverless customer, we conduct the largest measurement study to date, launching more than 50,000 function instances across these three services, in order to characterize their architectures, performance, and resource management efficiency. We explain how the platforms isolate the functions of different accounts, using either virtual machines or containers, which has important security implications. We characterize performance in terms of scalability, coldstart latency, and resource efficiency, with highlights including that AWS Lambda adopts a bin-packing-like strategy to maximize VM memory utilization, that severe contention between functions can arise in AWS and Azure, and that Google had bugs that allow customers to use resources for free.},
+	langid       = {english}
+}
+
+%% HeROsim -- SotA
+
+@article{calheiros_cloudsim_2011,
+	title        = {{{CloudSim}}: A Toolkit for Modeling and Simulation of Cloud Computing Environments and Evaluation of Resource Provisioning Algorithms},
+	shorttitle   = {{CloudSim}},
+	author       = {Calheiros, Rodrigo N. and Ranjan, Rajiv and Beloglazov, Anton and De Rose, C{\'e}sar A. F. and Buyya, Rajkumar},
+	year         = 2011,
+	month        = jan,
+	journal      = {Software: Practice and Experience},
+	volume       = 41,
+	number       = 1,
+	pages        = {23--50},
+	doi          = {10.1002/spe.995},
+	copyright    = {http://onlinelibrary.wiley.com/termsAndConditions\#vor},
+	abstract     = {Cloud computing is a recent advancement wherein IT infrastructure and applications are provided as `services' to end-users under a usage-based payment model. It can leverage virtualized services even on the fly based on requirements (workload patterns and QoS) varying with time. The application services hosted under Cloud computing model have complex provisioning, composition, configuration, and deployment requirements. Evaluating the performance of Cloud provisioning policies, application workload models, and resources performance models in a repeatable manner under varying system and user configurations and requirements is difficult to achieve. To overcome this challenge, we propose CloudSim: an extensible simulation toolkit that enables modeling and simulation of Cloud computing systems and application provisioning environments. The CloudSim toolkit supports both system and behavior modeling of Cloud system components such as data centers, virtual machines (VMs) and resource provisioning policies. It implements generic application provisioning techniques that can be extended with ease and limited effort. Currently, it supports modeling and simulation of Cloud computing environments consisting of both single and inter-networked clouds (federation of clouds). Moreover, it exposes custom interfaces for implementing policies and provisioning techniques for allocation of VMs under inter-networked Cloud computing scenarios. Several researchers from organizations, such as HP Labs in U.S.A., are using CloudSim in their investigation on Cloud resource provisioning and energy-efficient management of data center resources. The usefulness of CloudSim is demonstrated by a case study involving dynamic provisioning of application services in the hybrid federated clouds environment. The result of this case study proves that the federated Cloud computing model significantly improves the application QoS requirements under fluctuating resource and service demand patterns. Copyright q 2010 John Wiley \& Sons, Ltd.},
+	langid       = {english}
+}
+
+@inproceedings{mampage_cloudsimsc_2023,
+	title        = {{{CloudSimSC}}: {{A Toolkit}} for {{Modeling}} and {{Simulation}} of {{Serverless Computing Environments}}},
+	shorttitle   = {{CloudSimSC}},
+	author       = {Mampage, Anupama and Buyya, Rajkumar},
+	year         = 2023,
+	month        = dec,
+	booktitle    = {2023 {{IEEE International Conference}} on {{High Performance Computing}} \&amp; {{Communications}}, {{Data Science}} \&amp; {{Systems}}, {{Smart City}} \&amp; {{Dependability}} in {{Sensor}}, {{Cloud}} \&amp; {{Big Data Systems}} \&amp; {{Application}} ({{HPCC}}/{{DSS}}/{{SmartCity}}/{{DependSys}})},
+	publisher    = {IEEE},
+	address      = {Melbourne, Australia},
+	pages        = {550--557},
+	doi          = {10.1109/HPCC-DSS-SmartCity-DependSys60770.2023.00081},
+	isbn         = 9798350330014,
+	copyright    = {https://doi.org/10.15223/policy-029},
+	abstract     = {Serverless computing is gaining traction as an attractive model for the deployment of a multitude of workloads in the cloud. Designing and building effective resource management solutions for any computing environment requires extensive long term testing, experimentation and analysis of the achieved performance metrics. Utilizing real test beds and serverless platforms for such experimentation work is often times not possible due to resource, time and cost constraints. Thus, employing simulators to model these environments is key to overcoming the challenge of examining the viability of such novel ideas for resource management. Existing simulation software developed for serverless environments lack generalizibility in terms of their architecture as well as the various aspects of resource management, where most are purely focused on modeling function performance under a specific platform architecture. In contrast, we have developed a serverless simulation model with induced flexibility in its architecture as well as the key resource management aspects of function scheduling and scaling. Further, we incorporate techniques for easily deriving monitoring metrics required for evaluating any implemented solutions by users. Our work is presented as CloudSimSC, a modular extension to CloudSim which is a simulator tool extensively used for modeling cloud environments by the research community. We discuss the implemented features in our simulation tool using multiple use cases.},
+	langid       = {english}
+}
+
+@inproceedings{wickremasinghe_cloudanalyst_2010,
+	title        = {{{CloudAnalyst}}: {{A CloudSim-Based Visual Modeller}} for {{Analysing Cloud Computing Environments}} and {{Applications}}},
+	shorttitle   = {{CloudAnalyst}},
+	author       = {Wickremasinghe, Bhathiya and Calheiros, Rodrigo N. and Buyya, Rajkumar},
+	year         = 2010,
+	booktitle    = {2010 24th {{IEEE International Conference}} on {{Advanced Information Networking}} and {{Applications}}},
+	publisher    = {IEEE},
+	address      = {Perth, Australia},
+	pages        = {446--452},
+	doi          = {10.1109/AINA.2010.32},
+	isbn         = {978-1-4244-6695-5},
+	abstract     = {Advances in Cloud computing opens up many new possibilities for Internet applications developers. Previously, a main concern of Internet applications developers was deployment and hosting of applications, because it required acquisition of a server with a fixed capacity able to handle the expected application peak demand and the installation and maintenance of the whole software infrastructure of the platform supporting the application. Furthermore, server was underutilized because peak traffic happens only at specific times. With the advent of the Cloud, deployment and hosting became cheaper and easier with the use of pay-peruse flexible elastic infrastructure services offered by Cloud providers. Because several Cloud providers are available, each one offering different pricing models and located in different geographic regions, a new concern of application developers is selecting providers and data center locations for applications. However, there is a lack of tools that enable developers to evaluate requirements of large-scale Cloud applications in terms of geographic distribution of both computing servers and user workloads. To fill this gap in tools for evaluation and modeling of Cloud environments and applications, we propose CloudAnalyst. It was developed to simulate large-scale Cloud applications with the purpose of studying the behavior of such applications under various deployment configurations. CloudAnalyst helps developers with insights in how to distribute applications among Cloud infrastructures and value added services such as optimization of applications performance and providers incoming with the use of Service Brokers.},
+	langid       = {english}
+}
+
+@inproceedings{jeonCloudSimExtensionSimulatingDistributed2019,
+	title        = {A {{CloudSim-Extension}} for {{Simulating Distributed Functions-as-a-Service}}},
+	author       = {Jeon, Hongseok and Cho, Chunglae and Shin, Seungjae and Yoon, Seunghyun},
+	year         = 2019,
+	month        = dec,
+	booktitle    = {2019 20th {{International Conference}} on {{Parallel}} and {{Distributed Computing}}, {{Applications}} and {{Technologies}} ({{PDCAT}})},
+	publisher    = {IEEE},
+	address      = {Gold Coast, Australia},
+	pages        = {386--391},
+	doi          = {10.1109/PDCAT46702.2019.00076},
+	isbn         = {978-1-72812-616-6},
+	copyright    = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+	abstract     = {The performance of Functions-as-a-Service (FaaS) would be significantly improved by organizing cloud servers into a hierarchical distributed architecture, resulting in low-latency access and faster response when compared to centralized cloud. However, the distributed organization introduces a new type of decision making problem for placing and executing functions to a specific cloud server. In order to handle the problem, we extended a well-known cloud computing simulator, CloudSim. The extended CloudSim enables users to define FaaS functions with various characteristics and service level objectives (SLOs), place them across geo-distributed cloud servers, and evaluate per-function performance. Proof-of-Concept (PoC) evaluation results show the potential of our CloudSim extension in terms of execution efficiency and simulation reality.},
+	langid       = {english}
+}
+
+@article{cai_elasticsim_2017,
+	title        = {{{ElasticSim}}: {{A Toolkit}} for {{Simulating Workflows}} with {{Cloud Resource Runtime Auto-Scaling}} and {{Stochastic Task Execution Times}}},
+	shorttitle   = {{ElasticSim}},
+	author       = {Cai, Zhicheng and Li, Qianmu and Li, Xiaoping},
+	year         = 2017,
+	month        = jun,
+	journal      = {Journal of Grid Computing},
+	volume       = 15,
+	number       = 2,
+	pages        = {257--272},
+	doi          = {10.1007/s10723-016-9390-y},
+	abstract     = {Resource provisioning and scheduling are crucial for cloud workflow applications. Simulation is one of the most promising evaluation methods for different resource provisioning and scheduling algorithms. However, existing simulators for Cloud workflow applications fail to provide support for resource runtime auto-scaling and stochastic task execution time modeling. In this paper, a workflow simulator ElasticSim is introduced, which is an extension of the popular used CloudSim simulator by adding support for resource runtime auto-scaling and stochastic task execution time modeling. Most of existing workflow scheduling algorithms are static and are based on deterministic task execution times. By the aid of ElasticSim, the practical performance of existing static algorithms, when they are put into practice with stochastic task execution times, is evaluated. Experimental results show that about 2.8 \% to 20 \% additional resource rental cost is incurred for different cases and workflow deadlines are violated for most cases because of stochastic task execution times. Therefore, ElasticSim is a promising platform for evaluating the practical performance of workflow resource provisioning and scheduling algorithms, which supports resource runtime auto-scaling and stochastic task execution time modeling.},
+	langid       = {english}
+}
+
+@article{buyyaGridSimToolkitModeling2002,
+	title        = {{{GridSim}}: A Toolkit for the Modeling and Simulation of Distributed Resource Management and Scheduling for {{Grid}} Computing},
+	shorttitle   = {{GridSim}},
+	author       = {Buyya, Rajkumar and Murshed, Manzur},
+	year         = 2002,
+	month        = nov,
+	journal      = {Concurrency and Computation: Practice and Experience},
+	volume       = 14,
+	number       = {13-15},
+	pages        = {1175--1220},
+	doi          = {10.1002/cpe.710},
+	copyright    = {http://onlinelibrary.wiley.com/termsAndConditions\#vor},
+	abstract     = {Clusters, grids, and peer-to-peer (P2P) networks have emerged as popular paradigms for next generation parallel and distributed computing. They enable aggregation of distributed resources for solving large-scale problems in science, engineering, and commerce. In grid and P2P computing environments, the resources are usually geographically distributed in multiple administrative domains, managed and owned by different organizations with different policies, and interconnected by wide-area networks or the Internet. This introduces a number of resource management and application scheduling challenges in the domain of security, resource and policy heterogeneity, fault tolerance, continuously changing resource conditions, and policies. The resource management and scheduling systems for grid computing need to manage resources and application execution depending on either resource consumers' or owners' requirements, and continuously adapt to changes in resource availability.},
+	langid       = {english}
+}
+
+@article{nunez_icancloud_2012,
+	title        = {{{iCanCloud}}: {{A Flexible}} and {{Scalable Cloud Infrastructure Simulator}}},
+	shorttitle   = {{iCanCloud}},
+	author       = {N{\'u}{\~n}ez, Alberto and {V{\'a}zquez-Poletti}, Jose L. and Caminero, Agustin C. and Casta{\~n}{\'e}, Gabriel G. and Carretero, Jesus and Llorente, Ignacio M.},
+	year         = 2012,
+	month        = mar,
+	journal      = {Journal of Grid Computing},
+	volume       = 10,
+	number       = 1,
+	pages        = {185--209},
+	doi          = {10.1007/s10723-012-9208-5},
+	copyright    = {http://www.springer.com/tdm},
+	abstract     = {Simulation techniques have become a powerful tool for deciding the best starting conditions on pay-as-you-go scenarios. This is the case of public cloud infrastructures, where a given number and type of virtual machines (in short VMs) are instantiated during a specified time, being this reflected in the final budget. With this in mind, this paper introduces and validates iCanCloud, a novel simulator of cloud infrastructures with remarkable features such as flexibility, scalability, performance and usability. Furthermore, the iCanCloud simulator has been built on the following design principles: (1) it’s targeted to conduct large experiments, as opposed to others simulators from literature; (2) it provides a flexible and fully customizable global hypervisor for integrating any cloud brokering policy; (3) it reproduces the instance types provided by a given cloud infrastructure; and finally, (4) it contains a user-friendly GUI for configuring and launching simulations, that goes from a single VM to large cloud computing systems composed of thousands of machines.},
+	langid       = {english}
+}
+
+@article{mahmudIFogSim2ExtendedIFogSim2021,
+	title        = {{{iFogSim2}}: {{An}} Extended {{iFogSim}} Simulator for Mobility, Clustering, and Microservice Management in Edge and Fog Computing Environments},
+	shorttitle   = {{iFogSim2}},
+	author       = {Mahmud, Redowan and Pallewatta, Samodha and Goudarzi, Mohammad and Buyya, Rajkumar},
+	year         = 2022,
+	month        = aug,
+	journal      = {Journal of Systems and Software},
+	volume       = 190,
+	pages        = 111351,
+	doi          = {10.1016/j.jss.2022.111351},
+	abstract     = {Internet of Things (IoT) has already proven to be the building block for next-generation Cyber--Physical Systems (CPSs). The considerable amount of data generated by the IoT devices needs latency-sensitive processing, which is not feasible by deploying the respective applications in remote Cloud datacentres. Edge/Fog computing, a promising extension of Cloud at the IoT-proximate network, can meet such requirements for smart CPSs. However, the structural and operational differences of Edge/Fog infrastructure resist employing Cloud-based service regulations directly to these environments. As a result, many research works have been recently conducted, focusing on efficient application and resource management in Edge/Fog computing environments. Scalable Edge/Fog infrastructure is a must to validate these policies, which is also challenging to accommodate in the real-world due to high cost and implementation time. Considering simulation as a key to this constraint, various software have been developed that can imitate the physical behavior of Edge/Fog computing environments. Nevertheless, the existing simulators often fail to support advanced service management features because of their monolithic architecture, lack of actual dataset, and limited scope for a periodic update. To overcome these issues, we have developed modular simulation models for service migration, dynamic distributed cluster formation, and microservice orchestration for Edge/Fog computing based on real datasets and extended the basic components of iFogSim, a widely used Edge/Fog computing simulator for their ease of adoption as iFogSim2. The performance of iFogSim2 and its built-in service management policies are evaluated using three use case scenarios and compared with the contemporary simulators and benchmark policies under different settings. Results indicate that our simulator consumes less memory and minimizes simulation time by an average of 28\% when compared to other simulators.},
+	langid       = {english}
+}
+
+@inproceedings{mastenbroekOpenDCConvenientModeling2021,
+	title        = {{{OpenDC}} 2.0: {{Convenient Modeling}} and {{Simulation}} of {{Emerging Technologies}} in {{Cloud Datacenters}}},
+	shorttitle   = {{{OpenDC}} 2.0},
+	author       = {Mastenbroek, Fabian and Andreadis, Georgios and Jounaid, Soufiane and Lai, Wenchen and Burley, Jacob and Bosch, Jaro and Van Eyk, Erwin and Versluis, Laurens and Van Beek, Vincent and Iosup, Alexandru},
+	year         = 2021,
+	month        = may,
+	booktitle    = {2021 {{IEEE}}/{{ACM}} 21st {{International Symposium}} on {{Cluster}}, {{Cloud}} and {{Internet Computing}} ({{CCGrid}})},
+	publisher    = {IEEE},
+	address      = {Melbourne, Australia},
+	pages        = {455--464},
+	doi          = {10.1109/CCGrid51090.2021.00055},
+	isbn         = {978-1-72819-586-5},
+	copyright    = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+	abstract     = {Cloud datacenters are important for the digital society, serving stakeholders across industry, government, and academia. Simulation is a critical part of exploring datacenter technologies, enabling scalable experimentation with millions of jobs and hundreds of thousands of machines, and what-if analysis in a matter of minutes to hours. Although the community has already developed powerful simulators, emerging technologies and applications in modern datacenters require new approaches. Addressing this requirement, in this work we propose OpenDC, a new platform for datacenter simulation. OpenDC includes novel models for emerging cloud-datacenter technologies and applications, such as serverless computing with FaaS deployment and TensorFlow-based machine learning. Our design also focuses on convenience, with a web-based interface for interactive experimentation, support for experiment automation, a library of prefabs for constructing and sharing datacenter designs, and support for diverse input formats and output metrics. We implement, validate, and open-source OpenDC 2.0, a significant redesign and release after a multi-year research and development process. We demonstrate the benefits of OpenDC for the field through a set of representative use-cases: serverless, machine learning, procurement of HPC-as-a-Service infrastructure, educational practices, and reproducibility studies. Overall, OpenDC helps understand how datacenters work, design datacenter infrastructure, and train the next generation of experts.},
+	langid       = {english}
+}
+
+@inproceedings{mahmoudiSimFaaSPerformanceSimulator2021,
+	title        = {{{SimFaaS}}: {{A Performance Simulator}} for {{Serverless Computing Platforms}}:},
+	shorttitle   = {{SimFaaS}},
+	author       = {Mahmoudi, Nima and Khazaei, Hamzeh},
+	year         = 2021,
+	booktitle    = {Proceedings of the 11th {{International Conference}} on {{Cloud Computing}} and {{Services Science}}},
+	publisher    = {{SCITEPRESS - Science and Technology Publications}},
+	pages        = {23--33},
+	doi          = {10.5220/0010376500230033},
+	isbn         = {978-989-758-510-4},
+	langid       = {english}
+}
+
+%% Annexes
+
+@article{nikouniaHypervisorNeighborsNoise2015,
+  title = {Hypervisor and {{Neighbors}}' {{Noise}}: {{Performance Degradation}} in {{Virtualized Environments}}},
+  shorttitle = {Hypervisor and {{Neighbors}}' {{Noise}}},
+  author = {Nikounia, Seyed Hossein and Mohammadi, Siamak},
+  year = {2015},
+  journal = {IEEE Transactions on Services Computing},
+  pages = {1--1},
+  issn = {1939-1374},
+  doi = {10.1109/TSC.2015.2464811},
+  urldate = {2024-11-15},
+  abstract = {Users expect isolated performance from rented virtual machines (VMs) in an infrastructure as a service (IaaS) cloud environment. However, this is not happening in todays' systems because basically VMs are running in a shared environment. In this paper, we study performance degradation in a virtualized environment similar to IaaS clouds using Parsec 2.1 benchmarks. We consider slowdowns caused by hypervisor---hypervisor's noise---as well as co-located VMs---neighbors' noise. Previous researches did not consider multi-virtual CPU (vCPU) VMs in an overcommitted environments similar to IaaS clouds. Our target system consists of multiple multi-processor VMs running on a commodity chip-multiprocessor by a hypervisor. This configuration is widespread in todays' IaaS clouds like Amazon EC2. We find that performance degradation in a virtualized environment could be up to 16 which is far more than previous findings. Beside shared resources of memory sub-system, blindness of hypervisor's scheduler have large impact on the slowdown and this is contrary to recent researches that mostly blame last-level cache (LLC) contention for performance degradation. After investigating the causes of performance degradation, we provide some ideas that motivate researchers to reduce performance degradation through hardware and software techniques. We also mention some hints that help organizations to see if their applications are ready for the cloud.},
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  langid = {english},
+}
